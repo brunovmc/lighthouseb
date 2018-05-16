@@ -68,7 +68,7 @@ window.onYouTubeIframeAPIReady=function() {
             index:0,
             modestbranding:1,
             fs:0,
-            // origin rememeber to use this when ready to launch
+            origin:'https://www.lighthouseb.com',
             iv_load_policy:3,
             rel:0,
             showinfo:1,
