@@ -60,12 +60,12 @@ window.onYouTubeIframeAPIReady=function() {
        
         playerVars: {
             color: 'red',
-            controls: 0,
+            controls: 1,
             loop: 1,
             enablejsapi:1,
             listType:'playlist',
             list: 'PLvLdCxqsf1XfCWEscqmV4OLU6nBNcAuZ1',
-            index:0,
+            index:1,
             modestbranding:1,
             fs:0,
             // origin rememeber to use this when ready to launch
@@ -79,13 +79,14 @@ window.onYouTubeIframeAPIReady=function() {
         },
         events: {
             onReady: onPlayerReady,
-           
+          
             
            
             
         }
     });
 };
+
 
 function addToNt(event){
   
@@ -203,13 +204,18 @@ $('#prev').on('click', function () {
       var scrolled = $(document).scrollTop();
       if (scrolled > headerHeight){
         $('.landing-header').addClass('off-canvas');
+        $('.clickDrop').removeClass('transparent');
       } else {
         $('.landing-header').removeClass('off-canvas');
+        $('.clickDrop').addClass('transparent');
       }
         if (scrolled > scroll){
          $('.landing-header').removeClass('fixed');
+         
+         
         } else {
         $('.landing-header').addClass('fixed');
+        $('.clickDrop').addClass('transparent');
         }            
       scroll = $(document).scrollTop(); 
      });
@@ -223,6 +229,7 @@ $('.landing-header').on('click', function () {
 if ($('.landing-header').hasClass('off-canvas'))
     {
         $('.landing-header').removeClass('off-canvas');
+        $('.clickDrop').addClass('transparent');
     } 
 });
 
@@ -254,7 +261,6 @@ $('#play').on('click', function () {
 
 });
 
-
 $('#next').on('click', function () {
 
     if ($('.circle').hasClass('paused'))
@@ -269,6 +275,7 @@ $('#next').on('click', function () {
    
 
 });
+
 
 
 
