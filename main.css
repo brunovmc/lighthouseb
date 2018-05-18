@@ -601,10 +601,10 @@ span.back{
 
 
 .one{
-    background-color: rgba(107, 206, 186, 0.1);
+    background-color: rgba(203, 86, 216, 0.1);   
 }
 .two{
-   background-color: rgba(203, 86, 216, 0.1);
+    background-color: rgba(107, 206, 186, 0.1);
 }
 .three{
     background-color: rgba(46, 71, 232, 0.1)
