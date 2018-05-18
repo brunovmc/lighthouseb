@@ -68,7 +68,7 @@ window.onYouTubeIframeAPIReady=function() {
             index:0,
             modestbranding:1,
             fs:0,
-            origin:'https://www.lighthouseb.com',
+            // origin rememeber to use this when ready to launch
             iv_load_policy:3,
             rel:0,
             showinfo:1,
@@ -98,9 +98,9 @@ function addToNt(event){
 
 function ntzero(){
   if(nt<=0){
-    nt=8;
+    nt=3;
   }
-   else if(nt>=8){
+   else if(nt>=3){
     nt=0;
   }
   
@@ -245,8 +245,12 @@ $('#play').on('click', function () {
     {
         $('.circle').removeClass('paused');
     }
-
-   
+    if($('.dropdown-toggle').hasClass('transparent'))
+   {
+     $('.dropdown-toggle').removeClass('transparent');
+     $('.dropdown-toggle').removeClass('disabled');
+     $('.dropdown-toggle').addClass('on');
+   }
 
 });
 
@@ -268,6 +272,13 @@ $('#pause').on('click', function () {
 
     
         $('.circle').addClass('paused');
+        
+  if($('.dropdown-toggle').hasClass('on'))
+   {
+     $('.dropdown-toggle').removeClass('on');
+     $('.dropdown-toggle').addClass('disabled');
+     $('.dropdown-toggle').addClass('transparent');
+   }
     
 
 });
