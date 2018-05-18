@@ -254,17 +254,21 @@ $('#play').on('click', function () {
 
 });
 
+
 $('#next').on('click', function () {
 
     if ($('.circle').hasClass('paused'))
     {
         $('.circle').removeClass('paused');
     }
-
+    if($('.dropdown-toggle').hasClass('disabled')){
+      $('.dropdown-toggle').removeClass('disabled');
+      $('.dropdown-toggle').removeClass('transparent');
+      $('.dropdown-toggle').addClass('on');
+    }
    
 
 });
-
 
 
 
