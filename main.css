@@ -69,7 +69,7 @@ body{
 
 
 .textbar2{
-    height: 210px;
+    height: 20vh;
     background-color: rgba(0, 0, 0, .5);
     color: white;
 }
@@ -229,7 +229,7 @@ div .colorcustom2 a:hover{
 div.light{
    position: absolute;
    text-align: center;
-   margin-left: 361px;
+   margin-left: 28.5vw;
    margin-top: -30px;
   
   
@@ -243,7 +243,7 @@ div.light{
   border-right: 950px solid white;
   border-radius: 50%;
   margin-top: -261px;
-  margin-left: -586px;
+  margin-left: -33.4vw;
   
   text-align: center;
  
@@ -304,7 +304,7 @@ ul #musicbox{
 }
 
 .space2{
-    margin-top: 360px;
+    margin-top: 60vh;
 }
 
 .space3{
@@ -382,6 +382,7 @@ span.back{
 }
 
 .forward{
+    /*border:130px solid transparent;*/
      position:relative;
     z-index:1;
 }
@@ -580,6 +581,7 @@ span.back{
   background-repeat: no-repeat;
   background-image: url("https://images.unsplash.com/photo-1493898719456-b0e84bba5fcc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d58cd5a9bcd05b82c3b6ffaa92796c4&auto=format&fit=crop&w=750&q=80");
   z-index: 0;
+  border:130px solid white;
   
 }
 
@@ -593,7 +595,7 @@ span.back{
     left: 0;
     height:73px;
     width: 120px;
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: rgba(100, 100, 100, 0.5);
     margin:10px;
     text-align: center;
     float:left;
@@ -614,18 +616,18 @@ span.back{
 
 
 .one{
-    background-color: rgba(203, 86, 216, 0.1);   
+    background-color: rgba(203, 86, 216, 0.3);   
 }
 .two{
-    background-color: rgba(107, 206, 186, 0.1);
+    background-color: rgba(107, 206, 186, 0.3);
 }
 .three{
-    background-color: rgba(46, 71, 232, 0.1)
+    background-color: rgba(46, 71, 232, 0.3)
 }
 
 .lighthousetitle{
     margin-top: 200px;
-    margin-left:25%;
+    margin-left:28vw;
     position: fixed;
 }
 
@@ -650,7 +652,7 @@ span.back{
  
  
 .textbar{
-    height: 430px;
+    height: 40vh;
     background-color: rgba(0, 0, 0, .5);
     color: white;
 }
@@ -708,4 +710,3 @@ span.back{
    
     
 }
-
